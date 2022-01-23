@@ -1,4 +1,1 @@
-function helloworld {
-  echo "hello world!"
-}
-helloworld
+echo "hello world!"
