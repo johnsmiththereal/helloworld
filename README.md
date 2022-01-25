@@ -18,11 +18,3 @@ https://github.com/jedibig/BankingApplication_ver2/blob/d40825938bfe9a75bf154bcd
 <br/>
 https://github.com/prod-dev/travel/blob/7161d49bf3efbe57b67ac192f1f7fc5eb606f0cc/src/main/java/com/travel/filter/LogFilter.java
 <br/>
-<hr/>
-<code>String uri = httpRequest.getRequestURI();</code><br/>
-<code>String privateKeyHeaderValue = getBearerToken(httpRequest.getHeader(AUTH_HEADER_KEY));</code><br/>
-<code>log.debug("HEADER = " + privateKeyHeaderValue);</code><br/>
-<code>System.out.println(uri);</code><br/>
-https://github.com/Esawnn/Projet_IOT/blob/9e38d3d321c4bcfd55575b62a3b576162194a3bd/src/main/java/filters/JWTFilter.java
-<hr/>
-<br/>
