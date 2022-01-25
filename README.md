@@ -23,6 +23,6 @@ https://github.com/prod-dev/travel/blob/7161d49bf3efbe57b67ac192f1f7fc5eb606f0cc
 <code>LOG.debug("==" + req.getScheme() + "://" + req.getServerName() + req.getRequestURI() + queryString);</code><br>
 <hr/>
 https://github.com/VitaliiLysenko-cpu/Payments/blob/50dde6a3596dbb3649ff5c96999ef031f2404dde/src/main/java/com/lysenko/payments/servlet/account/TopUpAccountServlet.java<br/>
-<code>String tot = req.getParameter("total");<code/><br>
-<code>log.debug("total :" + tot);<code/><br>
+<code>String tot = req.getParameter("total");</code><br/>
+<code>log.debug("total :" + tot);</code><br/>
 <hr/>
