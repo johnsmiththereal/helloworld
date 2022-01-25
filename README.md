@@ -17,3 +17,5 @@ https://github.com/zanni/messaging-server/blob/07372443224edfc75567c800a6781030c
 https://github.com/jedibig/BankingApplication_ver2/blob/d40825938bfe9a75bf154bcdbe6de2e91f28d9a3/BankingApp_ver2/src/com/java/filter/RegistrationAuthentication.java
 <br/>
 https://github.com/prod-dev/travel/blob/7161d49bf3efbe57b67ac192f1f7fc5eb606f0cc/src/main/java/com/travel/filter/LogFilter.java
+<br/>
+https://github.com/Esawnn/Projet_IOT/blob/9e38d3d321c4bcfd55575b62a3b576162194a3bd/src/main/java/filters/JWTFilter.java
