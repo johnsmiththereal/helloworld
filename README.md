@@ -28,3 +28,23 @@ https://github.com/VitaliiLysenko-cpu/Payments/blob/50dde6a3596dbb3649ff5c96999e
 <code>String tot = req.getParameter("total");</code><br/>
 <code>log.debug("total :" + tot);</code><br/>
 <hr/>
+https://github.com/edu-sharing/Edu-Sharing/blob/2c92708f0cd51fe990024beada09e263ce853018/Backend/src/org/edu_sharing/repository/server/PreviewServlet.java<br/>
+<code>private boolean handleExternalThumbnail(HttpServletRequest req, HttpServletResponse resp, String url) throws IOException {</code><br/>
+<code>if ("false".equalsIgnoreCase(req.getParameter("allowRedirect")) &&</code><br/>
+<code>LightbendConfigLoader.get().getStringList("repository.communication.preview.remoteAllowList").stream().anyMatch((reg) -> {</code><br/>
+<code>Pattern pattern = Pattern.compile(reg);</code><br/>
+<code>Matcher matched = pattern.matcher(url);</code><br/>
+<code>return matched.matches();</code><br/>
+<code>})) {</code><br/>
+<code>logger.debug("Follow redirect allowed for " + url);</code><br/>
+<code>try(InputStream is = new HttpQueryTool().getStream(url)) {</code><br/>
+<code>resp.setHeader("Content-Type", "image/jpeg");</code><br/>
+<code>StreamUtils.copy(is, resp.getOutputStream());</code><br/>
+<code>return true;</code><br/>
+<code>} catch(Throwable t) {</code><br/>
+<code>logger.info("Fetching preview via http failed for: " + url, t);</code><br/>
+<code>}</code><br/>
+<code>}</code><br/>
+<code>resp.sendRedirect(url);</code><br/>
+<code>return true;</code><br/>
+<code>}</code><br/>
