@@ -20,10 +20,11 @@ https://github.com/prod-dev/travel/blob/7161d49bf3efbe57b67ac192f1f7fc5eb606f0cc
 <br/>
 <hr/>
 <code>
- 		String uri = httpRequest.getRequestURI();
-		String privateKeyHeaderValue = getBearerToken(httpRequest.getHeader(AUTH_HEADER_KEY));
-		log.debug("HEADER = " + privateKeyHeaderValue);
-		System.out.println(uri);
+ 		String uri = httpRequest.getRequestURI();<br/>
+		String privateKeyHeaderValue = getBearerToken(httpRequest.getHeader(AUTH_HEADER_KEY));<br/>
+		log.debug("HEADER = " + privateKeyHeaderValue);<br/>
+		System.out.println(uri);<br/>
 </code>
 https://github.com/Esawnn/Projet_IOT/blob/9e38d3d321c4bcfd55575b62a3b576162194a3bd/src/main/java/filters/JWTFilter.java
 <hr/>
+<br/>
